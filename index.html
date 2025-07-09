@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Golem Radio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="menu">
+        <div class="main-audio-container">
+            <div style="position: relative; border-radius: 20px; overflow: hidden; z-index: 3;">
+                <img src="/images/mainImage.jpg" width="400px" height="400px" style="position: absolute; pointer-events: none; filter: brightness(0.5);">
+                <button id="buttonPlay" style="width: 400px; height: 400px; border: none; background-color: transparent; color: white; font-size: 14px; cursor: pointer; border-radius: 50%; position: relative; z-index: 3;">
+                    <i id="buttonPlayImage" class="fa-solid fa-play fa-5x"></i>
+                </button>
+                <div style="background: linear-gradient(0deg, rgb(14, 14, 14) 65%, transparent); position: absolute; bottom: 0; width: 100%; height: 100px; height: 120px; display: flex; flex-direction: column; justify-content: end; align-items: center; padding-bottom: 10px;">
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                        <div style="display: inline-flex; justify-content: center; align-items: center; padding: 2px 8px; background-color: rgba(40, 40, 40, 0.75); border-radius: 20px;">
+						    <div class="availability-indicator" style="background-color: rgb(255, 255, 255, 0.6);"></div>
+                            <span id="spanTrackName" style="color: rgba(255, 255, 255, 0.6); display: inline-block; font-size: 14px; margin-left: 5px;">wsadник4, DOBROBOG - Golem Inc.</span>
+                            <div class="explicit-label" style="display: flex; color: rgba(255, 255, 255, 0.5); font-size: 8px; margin-left: 5px;">E</div>
+                        </div>
+                    </div>
+                    <div style="display: inline-flex; width: 100%; justify-content: center; align-items: center; margin-top: 5px;">
+                        <div class="availability-indicator-container" style="overflow: hidden; margin-left: 0px;">
+                            <div class="indicator-positive"></div>
+                            <span class="default-text" style="color: rgb(82, 255, 174, 0.6); margin-left: 5px; font-size: 14px;">Golem Radio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio title="Golem Radio: DOBROBOG - MEDUSA" id="mainAudio" style="display: none;" src="https://golemworld.ru:8443/stream"></audio>
+    </div>
+	<script type="module" src="/script.js"></script>
+</body>
+</html>
