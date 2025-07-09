@@ -24,7 +24,7 @@ window.onload = function() {
             .then(jsonResponse => jsonResponse.json())
             .then(json => {
                 spanTrackName.innerHTML = json.icestats.source.title;
-                mainAudio.title = `${json.icestats.source.title} (Golem Radio)`;
+                mainAudio.title = `${json.icestats.source.title}`;
             });
-    }, 1000);
+    }, 5000);
 }
